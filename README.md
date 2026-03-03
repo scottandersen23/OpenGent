@@ -1,2 +1,2 @@
 # OpenGent.ai
-"A place to build custom agents that will integrate with existing SaaS tools."
+"A place to deploy skilled agents that specialize in SaaS tools."
