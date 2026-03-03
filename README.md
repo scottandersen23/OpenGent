@@ -1,2 +1,2 @@
-<img src="opengent.png" width="300" height="300" />
+<img src="/opengent.png" width="300" height="300" />
 
