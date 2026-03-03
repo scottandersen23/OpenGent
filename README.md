@@ -1,6 +1,6 @@
 <img src="/Images/opengent.png" width="300" height="300" />
  
- # About OpenGent AI Corp
+ # About OpenGent
 
 OpenGent AI Corp is an AI-first data systems consulting firm that designs and deploys intelligent agent frameworks to elevate how organizations process, govern, and operationalize their data.
 
