@@ -1,2 +1,2 @@
-# OpenGent.ai
-"A place to deploy skilled agents that specialize in SaaS tools."
+<img src="opengent.png" width="300" height="300" />
+
