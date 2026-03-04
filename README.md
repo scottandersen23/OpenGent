@@ -1,4 +1,4 @@
-<img src="/images/opengent1.png" width="300" height="300" />
+<img src="/Images/opengent1.png" width="300" height="300" />
  
  # About OpenGent
 
