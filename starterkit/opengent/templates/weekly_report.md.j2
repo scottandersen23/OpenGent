@@ -1,0 +1,28 @@
+# OpenGent Weekly Data Intelligence Report
+**Client:** {{ client_name }}  
+**Generated:** {{ generated_at }}  
+
+## Executive Summary
+{% if ai_summary %}
+{{ ai_summary }}
+{% else %}
+_AI summary not enabled. Set `OPENAI_API_KEY` to include executive bullets._
+{% endif %}
+
+## Findings
+{% for f in findings %}
+### {{ f.title }}  _(Severity: {{ f.severity }})_
+**Check:** {{ f.check_name }}  
+**Details:** {{ f.details }}  
+{% if f.metric %}
+**Metric:** `{{ f.metric }}`  
+{% endif %}
+{% if f.recommended_action %}
+**Recommended action:** {{ f.recommended_action }}
+{% endif %}
+{% endfor %}
+
+## Next Actions (Suggested)
+{% for a in next_actions %}
+- {{ a }}
+{% endfor %}
