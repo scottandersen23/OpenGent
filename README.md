@@ -2,24 +2,20 @@
  
  # About OpenGent
 
-OpenGent AI Corp is an AI-first data systems consulting firm that designs and deploys intelligent agent frameworks to elevate how organizations process, govern, and operationalize their data.
+OpenGent is building the autonomous intelligence layer for modern data systems.
 
-Modern companies generate enormous volumes of information — yet most decision-making systems remain manual, fragmented, and reactive. OpenGent AI Corp integrates autonomous and semi-autonomous AI agents directly into data pipelines, analytics environments, and operational workflows to improve data quality, reduce latency, and increase decision precision.
+Today, companies generate enormous volumes of data, yet the systems responsible for interpreting that data remain largely manual, fragmented, and reactive. Analysts build dashboards, teams investigate problems after the fact, and critical signals are often missed.
 
-We specialize in:
+OpenGent changes this model by embedding AI agents directly into the data stack itself.
 
-AI-powered data pipeline monitoring and validation
+Through initial services engagements, we deploy intelligent agents inside customer data environments to monitor pipelines, validate data quality, detect business anomalies, and generate decision-ready insights. These deployments allow us to learn from real-world systems while refining a reusable agent framework that will ultimately evolve into a scalable software platform.
 
-Automated anomaly detection and revenue risk analysis
+Rather than layering AI on top of dashboards, OpenGent embeds intelligence throughout the entire data lifecycle — from ingestion and transformation to analytics and executive reporting. This approach transforms static reporting environments into adaptive systems that continuously monitor, analyze, and improve themselves.
 
-Agent-driven reporting and executive insight generation
+Our product integrates autonomous and semi-autonomous agents across data pipelines, analytics infrastructure, and operational workflows to deliver:
 
-Governance-aware metric standardization
-
-Intelligent workflow orchestration across warehouse and BI systems
-
-Our approach combines deep expertise in data architecture, analytics engineering, and machine intelligence to transform static reporting environments into adaptive, continuously improving systems.
-
-Rather than layering AI on top of dashboards, OpenGent embeds agents within the data lifecycle itself — from ingestion to transformation to executive reporting — ensuring that insights are accurate, traceable, and actionable.
-
-The result: higher-quality data, faster strategic decisions, and a measurable increase in operational intelligence.
+- AI-powered data pipeline monitoring and validation
+- Automated anomaly detection and revenue intelligence
+- Agent-driven reporting and executive insight generation
+- Governance-aware metric standardization
+- Intelligent workflow orchestration across data warehouses and BI systems.
