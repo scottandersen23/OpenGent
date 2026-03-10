@@ -21,5 +21,11 @@ Diagram of AI system.
 ## Project structure
 
 ## Roadmap
+MVP Success Criteria:
+The prototype succeeds if it can detect:
+- broken pipeline
+- missing data
+- major revenue anomaly
+- generate an explanation.
 
 ## License
