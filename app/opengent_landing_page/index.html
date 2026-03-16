@@ -1,209 +1,232 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>OpenGent | Autonomous Data Intelligence</title>
-<link rel="stylesheet" href="styles.css" />
+
+<link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
 <header class="navbar">
-  <div class="logo">OpenGent</div>
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#architecture">Architecture</a>
-    <a href="#contact">Contact</a>
-  </nav>
+
+<div class="logo">OpenGent</div>
+
+<nav class="nav-links">
+<a href="#features">Features</a>
+<a href="#architecture">Architecture</a>
+<a href="#advantages">Advantages</a>
+<a href="#contact">Early Access</a>
+</nav>
+
 </header>
 
+
+<!-- HERO -->
+
 <section class="hero">
-  <div class="hero-content">
-    <h1>Autonomous Intelligence<br>for Modern Data Pipelines</h1>
 
-    <p>
-      OpenGent embeds AI agents directly inside your data stack to monitor pipelines,
-      validate data quality, detect anomalies, and generate executive-ready insights.
-    </p>
+<div class="hero-inner">
 
-    <a class="cta" href="#contact">Request Early Access</a>
-  </div>
-</section>
+<h1>Autonomous Intelligence for Modern Data Pipelines</h1>
 
-<section class="section">
-
-<h2>The Problem With Modern Data Pipelines</h2>
-
-<p class="architecture-text">
-Modern data stacks rely on dozens of independent tools — ingestion systems,
-transformation frameworks, warehouses, and dashboards. When something breaks,
-teams often discover issues too late.
+<p class="hero-subtitle">
+OpenGent embeds AI agents directly into the data stack to monitor pipelines,
+validate data quality, detect anomalies, and deliver executive-ready insights.
 </p>
 
-<div class="problem-grid">
-
-<div class="problem">
-<img src="images/broken-pipeline.png" />
-<h3>Silent Pipeline Failures</h3>
-<p>Broken transformations or ingestion delays go unnoticed until dashboards are wrong.</p>
-</div>
-
-<div class="problem">
-<img src="images/manual-debug.png" />
-<h3>Manual Investigation</h3>
-<p>Data engineers spend hours tracing logs across multiple systems.</p>
-</div>
-
-<div class="problem">
-<img src="images/data-chaos.png" />
-<h3>Fragmented Monitoring</h3>
-<p>Observability tools monitor metrics but lack true system intelligence.</p>
-</div>
+<a href="#contact" class="cta-primary">
+Request Early Access
+</a>
 
 </div>
 
 </section>
 
+
+
+<!-- PIPELINE VISUALIZATION -->
+
+<section class="pipeline-section">
+
+<h2>AI-Driven Data Pipeline</h2>
+
+<p class="section-description">
+OpenGent continuously monitors the entire lifecycle of your data infrastructure —
+from ingestion to analytics — using autonomous AI agents.
+</p>
+
+<div class="pipeline-diagram">
+
+<svg viewBox="0 0 1000 200">
+
+<defs>
+<filter id="glow">
+<feGaussianBlur stdDeviation="3"/>
+<feMerge>
+<feMergeNode/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+</defs>
+
+<path
+d="M100 100 L300 100 L500 100 L700 100 L900 100"
+class="pipeline-line"
+/>
+
+<circle r="6" class="data-packet">
+<animateMotion dur="4s" repeatCount="indefinite"
+path="M100 100 L300 100 L500 100 L700 100 L900 100"/>
+</circle>
+
+<circle r="6" class="data-packet alt">
+<animateMotion dur="5.5s" repeatCount="indefinite"
+path="M100 100 L300 100 L500 100 L700 100 L900 100"/>
+</circle>
+
+<g class="node">
+<circle cx="100" cy="100" r="25"/>
+<text x="100" y="105">Sources</text>
+</g>
+
+<g class="node">
+<circle cx="300" cy="100" r="25"/>
+<text x="300" y="105">Ingest</text>
+</g>
+
+<g class="node">
+<circle cx="500" cy="100" r="25"/>
+<text x="500" y="105">Transform</text>
+</g>
+
+<g class="node">
+<circle cx="700" cy="100" r="25"/>
+<text x="700" y="105">Warehouse</text>
+</g>
+
+<g class="node agent">
+<circle cx="900" cy="100" r="28"/>
+<text x="900" y="105">AI</text>
+</g>
+
+</svg>
+
+</div>
+
+</section>
+
+
+
+<!-- FEATURES -->
+
 <section id="features" class="section">
+
 <h2>Platform Capabilities</h2>
 
 <div class="features-grid">
 
-<div class="feature">
+<div class="feature-card">
 <h3>Pipeline Monitoring</h3>
-<p>AI agents continuously inspect pipeline health across ingestion, transformation, and analytics layers.</p>
+<p>AI agents observe ingestion, transformations, and warehouse activity continuously.</p>
 </div>
 
-<div class="feature">
+<div class="feature-card">
 <h3>Data Validation</h3>
-<p>Automatically verify schema integrity, freshness, completeness, and statistical consistency.</p>
+<p>Detect schema changes, freshness issues, and statistical anomalies automatically.</p>
 </div>
 
-<div class="feature">
+<div class="feature-card">
 <h3>Anomaly Detection</h3>
-<p>Detect unexpected changes in revenue, metrics, and pipeline performance before stakeholders notice.</p>
+<p>Identify unusual patterns before dashboards and stakeholders are affected.</p>
 </div>
 
-<div class="feature">
-<h3>Agent‑Driven Insights</h3>
-<p>Autonomous agents summarize operational insights and deliver executive‑ready reports.</p>
-</div>
-
-</div>
-</section>
-
-<section class="section">
-
-<h2>Why AI Agents Transform Data Operations</h2>
-
-<p class="architecture-text">
-OpenGent introduces intelligent agents that continuously observe the
-entire data lifecycle. Instead of reacting to failures, the system
-proactively identifies risk patterns and coordinates corrective actions.
-</p>
-
-<div class="features-grid">
-
-<div class="feature">
-<img src="images/agent-observe.png"/>
-<h3>Continuous Observation</h3>
-<p>Agents monitor ingestion events, schema changes, and warehouse metrics in real time.</p>
-</div>
-
-<div class="feature">
-<img src="images/agent-diagnose.png"/>
-<h3>Automated Root Cause Analysis</h3>
-<p>Agents trace issues across pipelines to determine the source of failures.</p>
-</div>
-
-<div class="feature">
-<img src="images/agent-predict.png"/>
-<h3>Predictive Detection</h3>
-<p>Statistical models detect anomalies before they impact dashboards.</p>
-</div>
-
-<div class="feature">
-<img src="images/agent-report.png"/>
-<h3>Executive Intelligence</h3>
-<p>Agents summarize system health and deliver executive-ready insights.</p>
+<div class="feature-card">
+<h3>Executive Insights</h3>
+<p>Agents summarize operational intelligence for data teams and leadership.</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="architecture" class="section">
 
-<h2>Agent-Driven Data Architecture</h2>
 
-<p class="architecture-text">
-OpenGent embeds specialized AI agents inside each layer of the data
-stack to observe events, evaluate data health, and coordinate
-automated analysis.
-</p>
+<!-- ADVANTAGES -->
 
-<img class="architecture-image" src="images/opengent-architecture.png" />
+<section id="advantages" class="section">
 
-<div class="architecture-flow">
-<div>Data Sources</div>
-<div>Ingestion</div>
-<div>Transformation</div>
-<div>Warehouse</div>
-<div>Agent Layer</div>
-<div>Insights</div>
+<h2>Why OpenGent Is Different</h2>
+
+<div class="advantages-grid">
+
+<div class="advantage-card">
+<h3>Agent-Driven Monitoring</h3>
+<p>Unlike observability tools, OpenGent deploys intelligent agents that reason about system health.</p>
 </div>
 
-</section>
-
-<section class="section">
-
-<h2>Example Agent Activity</h2>
-
-<div class="simulation">
-
-<div class="agent-card">
-<h4>Pipeline Agent</h4>
-<p>Monitoring Snowflake ingestion latency.</p>
-<span class="status green">Healthy</span>
+<div class="advantage-card">
+<h3>Full Lifecycle Visibility</h3>
+<p>Observe ingestion, transformation, warehouse performance, and analytics usage in one system.</p>
 </div>
 
-<div class="agent-card">
-<h4>Schema Agent</h4>
-<p>Detected column type change in payments table.</p>
-<span class="status yellow">Investigating</span>
-</div>
-
-<div class="agent-card">
-<h4>Revenue Agent</h4>
-<p>Unusual revenue drop detected in EU region.</p>
-<span class="status red">Alert Triggered</span>
+<div class="advantage-card">
+<h3>Predictive Data Intelligence</h3>
+<p>Detect anomalies early using statistical and machine-learning driven analysis.</p>
 </div>
 
 </div>
 
 </section>
+
+
+
+<!-- CONTACT -->
 
 <section id="contact" class="section">
+
 <h2>Join the Early Access Program</h2>
 
+<p class="section-description">
+We are partnering with early teams building modern data platforms.
+Request access to learn how OpenGent can transform your data operations.
+</p>
+
 <form id="leadForm">
-<input type="text" placeholder="Name" required />
-<input type="email" placeholder="Email" required />
-<input type="text" placeholder="Company / Role" />
+
+<input type="text" placeholder="Name" required>
+
+<input type="email" placeholder="Email" required>
+
+<input type="text" placeholder="Company / Role">
+
 <textarea placeholder="What data challenges are you facing?"></textarea>
-<button type="submit">Request Access</button>
+
+<button type="submit" class="cta-secondary">
+Request Access
+</button>
+
 </form>
 
 <p id="formMessage"></p>
 
 </section>
 
-<footer>
-<p>© 2026 OpenGent AI</p>
+
+
+<footer class="footer">
+
+<p>© 2026 OpenGent AI Corp</p>
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>

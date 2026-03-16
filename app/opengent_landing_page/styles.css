@@ -251,6 +251,133 @@ font-size:12px;
 .yellow{background:#b38f00;}
 .red{background:#b00020;}
 
+/* Pipeline Visualization */
+
+.pipeline-visual{
+margin-top:60px;
+display:flex;
+justify-content:center;
+}
+
+.pipeline-visual svg{
+max-width:1000px;
+width:100%;
+}
+
+.node{
+fill:#12182b;
+stroke:#2a3155;
+stroke-width:1.5;
+}
+
+.node.agent{
+stroke:#7f8cff;
+}
+
+.pipeline{
+stroke:#2a3155;
+stroke-width:2;
+}
+
+.data{
+fill:#7f8cff;
+}
+
+/* --- AI PIPELINE SYSTEM --- */
+
+.pipeline-system{
+margin-top:80px;
+display:flex;
+justify-content:center;
+}
+
+.pipeline-system svg{
+max-width:1000px;
+width:100%;
+}
+
+/* PIPELINE LINE */
+
+.pipeline-line{
+stroke:#5c6cff;
+stroke-width:4;
+fill:none;
+filter:url(#glow);
+opacity:0.7;
+}
+
+/* DATA FLOW */
+
+.data-flow{
+fill:#7f8cff;
+filter:url(#glow);
+}
+
+.data-flow.alt{
+fill:#a4b0ff;
+}
+
+/* NODES */
+
+.node circle{
+fill:#12182b;
+stroke:#4e59ff;
+stroke-width:2;
+filter:url(#glow);
+}
+
+.node text{
+fill:white;
+font-size:12px;
+text-anchor:middle;
+font-weight:500;
+pointer-events:none;
+}
+
+/* AGENT NODE */
+
+.node.agent circle{
+stroke:#9aa5ff;
+stroke-width:3;
+}
+
+/* AGENT BRAIN */
+
+.agent-brain{
+fill:#1c2040;
+stroke:#7f8cff;
+stroke-width:2;
+filter:url(#glow);
+}
+
+.agent-link{
+stroke:#4e59ff;
+stroke-width:1.5;
+opacity:0.5;
+}
+
+/* ANOMALY PULSE */
+
+.anomaly-pulse{
+fill:none;
+stroke:#ff6b6b;
+stroke-width:2;
+opacity:0.7;
+animation:pulse 2.8s infinite;
+}
+
+@keyframes pulse{
+0%{
+r:20;
+opacity:0.9;
+}
+
+100%{
+r:70;
+opacity:0;
+}
+}
+
 /* FOOTER */
 
 footer {
