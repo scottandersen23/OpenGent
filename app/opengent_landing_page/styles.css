@@ -192,6 +192,64 @@ button:hover{
   background:#7c7fff;
 }
 
+.problem-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.problem{
+background:#12182b;
+padding:30px;
+border-radius:12px;
+}
+
+.problem img{
+width:80px;
+margin-bottom:15px;
+}
+
+.feature img{
+width:60px;
+margin-bottom:10px;
+}
+
+.architecture-image{
+width:100%;
+max-width:900px;
+margin:40px auto;
+display:block;
+border-radius:10px;
+}
+
+.simulation{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.agent-card{
+background:#12182b;
+padding:20px;
+border-radius:10px;
+width:260px;
+text-align:left;
+}
+
+.status{
+display:inline-block;
+margin-top:10px;
+padding:4px 10px;
+border-radius:20px;
+font-size:12px;
+}
+
+.green{background:#2e7d32;}
+.yellow{background:#b38f00;}
+.red{background:#b00020;}
 
 /* FOOTER */
 
