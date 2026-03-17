@@ -44,65 +44,6 @@ validate data quality, detect anomalies, and generate executive-ready insights.
 
 </div>
 
-
-<!-- AI PIPELINE VISUAL -->
-
-<div class="pipeline-system">
-
-<svg viewBox="0 0 1100 260" class="pipeline-svg">
-
-<path
-d="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"
-class="pipeline-path"/>
-
-<circle r="6" class="data-particle">
-<animateMotion dur="5s" repeatCount="indefinite"
-path="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"/>
-</circle>
-
-<circle r="6" class="data-particle">
-<animateMotion begin="2s" dur="5s" repeatCount="indefinite"
-path="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"/>
-</circle>
-
-<g class="node">
-<circle cx="100" cy="140" r="26"/>
-<text x="100" y="145">Sources</text>
-</g>
-
-<g class="node">
-<circle cx="350" cy="120" r="26"/>
-<text x="350" y="125">Ingest</text>
-</g>
-
-<g class="node">
-<circle cx="500" cy="140" r="26"/>
-<text x="500" y="145">Transform</text>
-</g>
-
-<g class="node">
-<circle cx="700" cy="160" r="26"/>
-<text x="700" y="165">Warehouse</text>
-</g>
-
-<g class="node agent">
-<circle cx="900" cy="140" r="30"/>
-<text x="900" y="145">Agents</text>
-</g>
-
-<line x1="350" y1="120" x2="900" y2="70" class="agent-link"/>
-<line x1="500" y1="140" x2="900" y2="70" class="agent-link"/>
-<line x1="700" y1="160" x2="900" y2="70" class="agent-link"/>
-
-<circle cx="900" cy="70" r="22" class="agent-brain"/>
-<text x="900" y="75">AI</text>
-
-<circle cx="500" cy="140" r="25" class="anomaly-pulse"/>
-
-</svg>
-
-</div>
-
 </section>
 
 
@@ -311,6 +252,145 @@ to observe events and coordinate automated analysis.
 </p>
 
 <img class="architecture-image" src="images/opengent-architecture.png" />
+
+<!-- AI PIPELINE VISUAL -->
+
+<div class="pipeline-system">
+
+<svg viewBox="0 0 1100 260" class="pipeline-svg">
+
+<!-- DEFINITIONS -->
+
+<defs>
+
+<linearGradient id="pipeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+<stop offset="0%" stop-color="#6366f1"/>
+<stop offset="50%" stop-color="#3b82f6"/>
+<stop offset="100%" stop-color="#06b6d4"/>
+</linearGradient>
+
+<filter id="softGlow">
+<feGaussianBlur stdDeviation="4" result="blur"/>
+<feMerge>
+<feMergeNode in="blur"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+</defs>
+
+<!-- MAIN PIPE -->
+
+<path
+d="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"
+stroke="url(#pipeGradient)"
+stroke-width="20"
+fill="none"
+stroke-linecap="round"/>
+
+<!-- INNER FLOW -->
+
+<path
+d="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"
+stroke="#60a5fa"
+stroke-width="4"
+stroke-dasharray="8 14"
+fill="none">
+
+<animate attributeName="stroke-dashoffset"
+values="0;100"
+dur="4s"
+repeatCount="indefinite"/>
+
+</path>
+
+<!-- DATA PACKETS -->
+
+<rect width="14" height="7" rx="3" fill="#22d3ee" filter="url(#softGlow)">
+<animateMotion dur="4s" repeatCount="indefinite"
+path="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"/>
+</rect>
+
+<rect width="14" height="7" rx="3" fill="#22d3ee" filter="url(#softGlow)">
+<animateMotion begin="0.8s" dur="4s" repeatCount="indefinite"
+path="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"/>
+</rect>
+
+<rect width="14" height="7" rx="3" fill="#22d3ee" filter="url(#softGlow)">
+<animateMotion begin="1.6s" dur="4s" repeatCount="indefinite"
+path="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"/>
+</rect>
+
+<rect width="14" height="7" rx="3" fill="#22d3ee" filter="url(#softGlow)">
+<animateMotion begin="2.4s" dur="4s" repeatCount="indefinite"
+path="M100 140 C250 120, 350 120, 500 140 S750 160, 900 140"/>
+</rect>
+
+<!-- PIPELINE NODES -->
+
+<g class="node">
+<circle cx="100" cy="140" r="30" fill="#0f172a"/>
+<circle cx="100" cy="140" r="30" stroke="#3b82f6" stroke-width="2" fill="none"/>
+<text x="100" y="145" text-anchor="middle" fill="#cbd5f5" font-size="12">Sources</text>
+</g>
+
+<g class="node">
+<circle cx="350" cy="120" r="30" fill="#0f172a"/>
+<circle cx="350" cy="120" r="30" stroke="#3b82f6" stroke-width="2" fill="none"/>
+<text x="350" y="125" text-anchor="middle" fill="#cbd5f5" font-size="12">Ingest</text>
+</g>
+
+<g class="node">
+<circle cx="500" cy="140" r="30" fill="#0f172a"/>
+<circle cx="500" cy="140" r="30" stroke="#3b82f6" stroke-width="2" fill="none"/>
+<text x="500" y="145" text-anchor="middle" fill="#cbd5f5" font-size="12">Transform</text>
+</g>
+
+<g class="node">
+<circle cx="700" cy="160" r="30" fill="#0f172a"/>
+<circle cx="700" cy="160" r="30" stroke="#3b82f6" stroke-width="2" fill="none"/>
+<text x="700" y="165" text-anchor="middle" fill="#cbd5f5" font-size="12">Warehouse</text>
+</g>
+
+<!-- AGENT NODE -->
+
+<g class="node agent">
+<circle cx="900" cy="140" r="34" fill="#020617"/>
+<circle cx="900" cy="140" r="34" stroke="#22d3ee" stroke-width="2" fill="none"/>
+<text x="900" y="145" text-anchor="middle" fill="#67e8f9" font-size="13">Agents</text>
+</g>
+
+<!-- AGENT MONITOR LINKS -->
+
+<line x1="350" y1="120" x2="900" y2="70" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+<line x1="500" y1="140" x2="900" y2="70" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+<line x1="700" y1="160" x2="900" y2="70" stroke="#38bdf8" stroke-width="1" opacity="0.6"/>
+
+<!-- AI MONITOR -->
+
+<circle cx="900" cy="70" r="24" fill="#020617"/>
+<circle cx="900" cy="70" r="24" stroke="#a78bfa" stroke-width="2" fill="none"/>
+<text x="900" y="75" text-anchor="middle" fill="#c4b5fd" font-size="12">AI</text>
+
+<!-- ANOMALY DETECTION PULSE -->
+
+<circle cx="500" cy="140" r="28" stroke="#f472b6" stroke-width="2" fill="none" opacity="0.6">
+
+<animate attributeName="r"
+values="28;50"
+dur="2s"
+repeatCount="indefinite"/>
+
+<animate attributeName="opacity"
+values="0.6;0"
+dur="2s"
+repeatCount="indefinite"/>
+
+</circle>
+
+</svg>
+
+</div>
 
 <div class="architecture-flow">
 

@@ -64,21 +64,25 @@ nav a:hover{
 
 .hero{
   padding:140px 20px 120px 20px;
-  display:block;
-  justify-content:center;
   text-align:center;
+}
+
+.hero h1{
+font-size:54px;
+margin-bottom:20px;
 }
 
 .hero-content{
   max-width:900px;
+  margin:auto;
 }
 
 .hero-content p{
-  margin-top:20px;
-  font-size:18px;
-  color:#ffffff;
+margin-top:20px;
+color:white;
+opacity:0.9;
+font-size:18px;
 }
-
 
 /* CTA */
 
